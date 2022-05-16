@@ -1,0 +1,57 @@
+body{
+    background-image: url("https://img.freepik.com/vetores-gratis/natureza-paisagem-em-estilo-cartoon-com-floresta-e-montanhas_198696-201.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0, 0;
+}
+
+.login {
+    background-color: rgba(104, 46, 19, 0.39);
+    display: flex;
+    flex-direction: column;
+    margin-left: 30vw;
+    margin-right: 30vw;
+    margin-top: 40%;
+    border-radius: 12px;
+    padding: 15px;
+    border: 3px dashed rgb(77, 31, 10);;
+}
+
+.login h1{
+    color: rgb(77, 31, 10);
+    text-align: center;
+}
+
+.login h1, label, input, button{
+    font-family: cursive;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-around
+}
+
+.container-button button {
+    width: 15vw;
+    padding: 5px;
+    color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.container-button button:hover {
+    background-color: rgb(77, 31, 10);;
+}
+
+.line{
+    border: 1px solid rgb(77, 31, 10);;
+}
+
+.container-button button {
+    background-color: rgb(77, 31, 10);;
+}
+
+.login h1 {
+}

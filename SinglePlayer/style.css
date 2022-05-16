@@ -1,0 +1,81 @@
+
+header{
+    display: flex;
+    justify-content: center;
+    font-family: GameFont;
+    color: #67db4a;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url("https://cdn.wallpapersafari.com/38/13/sQtEFD.png");
+    background-size: 100vw 100vh;
+    object-fit: contain;
+    background-repeat: no-repeat;
+}
+
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 20px;
+    justify-content: center;
+    margin-top: 140px;
+}
+
+.cards {
+    width: 170px;
+    height: 260px;
+    box-shadow: 1px 1px 5px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #750660de;
+    font-weight: 700;
+    border-radius: 5%;
+    transition: 0.6s;  	
+    transform-style: preserve-3d;    	
+    position: relative; 
+    font-family: GameFont;
+    color: #00d558;
+}
+.cards.flipped {
+    transform: rotateY(180deg);
+}
+
+.front, .back {  	    	
+    position: absolute;  	
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.front {
+    z-index: 2;  
+    font-size: 34px;
+}    
+
+.back {
+    transform: rotateY(180deg);
+    font-size: 12px;
+}
+
+button {
+    width: fit;
+    height: fit-content;
+    padding: 5px 15px;
+    color: white;
+    background-color: rgb(0 65 75);
+    border: 3px double #7ae5568e;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+@font-face {
+    font-family: GameFont;
+    src: url(../MINECRAFTPE.ttf);
+}
