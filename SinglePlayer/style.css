@@ -67,13 +67,17 @@ main {
 button {
     width: fit;
     height: fit-content;
-    padding: 5px 15px;
-    color: white;
+    padding: 10px 15px 0px 15px;
+    color: #c225a5de;
     background-color: rgb(0 65 75);
-    border: 3px double #7ae5568e;
+    border: 3px double #00d558;
     border-radius: 15px;
     font-weight: bold;
     font-size: 20px;
+    font-family: GameFont;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 @font-face {
