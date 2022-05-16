@@ -14,5 +14,18 @@
         </main>
 
         <script src="script.js"></script>
+        <script src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".cards"), {
+                max: 10,
+                speed: 400,
+                transition: true,
+                glare: true,
+                "max-glare": .8,
+                "mouse-event-element": null,
+                "glare-prerender": false
+            });
+            
+        </script>
     </body>
 </html>

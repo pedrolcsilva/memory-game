@@ -41,6 +41,7 @@ main {
     position: relative; 
     font-family: GameFont;
     color: #00d558;
+    overflow: hidden;
 }
 
 .cards:hover:not(.flipped){
@@ -56,7 +57,13 @@ main {
 }
 
 .cards.flipped {
-    transform: rotateY(180deg);
+    transform: rotateY(180deg) !important;
+    overflow: visible;
+}
+
+.cards.flipped .js-tilt-glare-inner{
+    background-image: none !important;
+    transform: none !important;
 }
 
 .front, .back {  	    	
@@ -68,7 +75,7 @@ main {
 }
 
 .front {
-    z-index: 2;  
+    z-index: 1;  
     font-size: 34px;
 }    
 
