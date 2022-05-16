@@ -7,9 +7,12 @@ header{
 }
 
 body {
+    margin: 0;
+    padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-image: url("https://img.freepik.com/free-vector/futuristic-technological-wallpaper_79603-1093.jpg?t=st=1652673569~exp=1652674169~hmac=485a35f405055182daeea958dbd30ff8426fbabefec94ed0bb37f5f581273581&w=1380");
-    background-size: cover;
+    background-image: url("https://cdn.wallpapersafari.com/38/13/sQtEFD.png");
+    background-size: 100vw 100vh;
+    object-fit: contain;
     background-repeat: no-repeat;
 }
 
@@ -30,14 +33,14 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #770562ed;
+    background: #750660de;
     font-weight: 700;
     border-radius: 5%;
     transition: 0.6s;  	
     transform-style: preserve-3d;    	
     position: relative; 
     font-family: GameFont;
-    color: #67db4a;
+    color: #00d558;
 }
 .cards.flipped {
     transform: rotateY(180deg);
@@ -64,13 +67,17 @@ main {
 button {
     width: fit;
     height: fit-content;
-    padding: 5px 15px;
-    color: white;
+    padding: 10px 15px 0px 15px;
+    color: #c225a5de;
     background-color: rgb(0 65 75);
-    border: 3px double #7ae5568e;
+    border: 3px double #00d558;
     border-radius: 15px;
     font-weight: bold;
     font-size: 20px;
+    font-family: GameFont;
+    display: flex;
+    align-items: center;
+    text-align: center;
 }
 
 @font-face {
