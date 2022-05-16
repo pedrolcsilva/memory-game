@@ -42,6 +42,19 @@ main {
     font-family: GameFont;
     color: #00d558;
 }
+
+.cards:hover:not(.flipped){
+    color: #750660de;
+    background: #00d558;
+    transition: .1s;
+}
+
+.cards:active:not(.flipped){
+    color: hsla(311, 90%, 24%, 0.6);
+    background: hsla(145, 100%, 42%, 0.6);
+    transition: .1s;
+}
+
 .cards.flipped {
     transform: rotateY(180deg);
 }
@@ -78,6 +91,17 @@ button {
     display: flex;
     align-items: center;
     text-align: center;
+}
+
+button:hover {
+    color: #00d558;
+    border-color: #c225a5de;
+    transition: .2s;
+}
+
+button:active {
+    opacity: .8;
+    transition: .2s;
 }
 
 @font-face {
