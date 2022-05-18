@@ -9,12 +9,18 @@
         <header>
             <div>
                 <h3>Player 1</h3>
-                <h4>Pontos: </h4>
+                <div>
+                    <h4>Pontos: </h4>
+                    <h4>0</h4>
+                </div>
             </div>
             <button id="go_back">Voltar</button>
             <div>
                 <h3>Player 2</h3>
-                <h4>Pontos: </h4>
+                <div>
+                    <h4>0</h4>
+                    <h4>Pontos: </h4>
+                </div>
             </div>
         </header>
 
@@ -22,5 +28,18 @@
         </main>
 
         <script src="script.js"></script>
+        <script src="vanilla-tilt.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".cards"), {
+                max: 10,
+                speed: 400,
+                transition: true,
+                glare: true,
+                "max-glare": .8,
+                "mouse-event-element": null,
+                "glare-prerender": false
+            });
+            
+        </script>
     </body>
 </html>

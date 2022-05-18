@@ -1,57 +1,61 @@
 body{
-    background-image: url("https://img.freepik.com/vetores-gratis/natureza-paisagem-em-estilo-cartoon-com-floresta-e-montanhas_198696-201.jpg");
-    background-repeat: no-repeat;
+    margin: 0;
+    background-image: url("./background.png");
     background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
     background-attachment: fixed;
-    background-position: 0, 0;
+    background-position: center;
+    display: flex;
+    justify-content: center;
 }
 
-.login {
-    background-color: rgba(104, 46, 19, 0.39);
+.menu {
+    height: 50vh;
+    width: 50vh;
+    border-radius: 50%;
     display: flex;
     flex-direction: column;
-    margin-left: 30vw;
-    margin-right: 30vw;
-    margin-top: 40%;
-    border-radius: 12px;
-    padding: 15px;
-    border: 3px dashed rgb(77, 31, 10);;
+    margin-top: 24vh;
+    align-items: center;
+    justify-content: center;
 }
 
-.login h1{
-    color: rgb(77, 31, 10);
+.menu h1{
+    color: #130037;
     text-align: center;
+    font-size: 4vh;
 }
 
-.login h1, label, input, button{
-    font-family: cursive;
+.menu h1, label, input, button{
+    font-family: GameFont;
 }
 
-.container-button {
-    display: flex;
-    justify-content: space-around
+.menu button {
+    width: 16vh;
+    height: fit-content;
+    border-bottom: 0.5vh double #130037;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+    color: #130037;
+    font-size: 1.7vh;
+    padding-left: 0vh;
+    padding-right: 0vh;
 }
 
-.container-button button {
-    width: 15vw;
-    padding: 5px;
-    color: white;
-    border: 1px solid gray;
-    border-radius: 20px;
-    font-weight: bold;
+button:hover {
+    color: #00d558;
+    border-color: #00d558;
+    transition: .3s;
+}
+button:active{
+    color: #00d558;
+    border-color: #00d558;
 }
 
-.container-button button:hover {
-    background-color: rgb(77, 31, 10);;
-}
-
-.line{
-    border: 1px solid rgb(77, 31, 10);;
-}
-
-.container-button button {
-    background-color: rgb(77, 31, 10);;
-}
-
-.login h1 {
+@font-face {
+    font-family: GameFont;
+    src: url(../MINECRAFTPE.ttf);
 }

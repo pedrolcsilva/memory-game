@@ -14,8 +14,8 @@ body {
     background-size: 200vh 100vh;
     object-fit: contain;
     background-repeat: no-repeat;
+    background-attachment: fixed;
 }
-
 
 main {
     display: flex;
@@ -29,14 +29,13 @@ main {
 .cards {
     min-width: 16vh;
     min-height: 26vh;
-    max-width: 10%;
-    max-height: 18%;
+    width: 170px;
+    height: 260px;
     box-shadow: 1px 1px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
     background: #750660de;
-    font-weight: 700;
     border-radius: 5%;
     transition: 0.6s;  	
     transform-style: preserve-3d;    	
@@ -94,19 +93,41 @@ main {
 .back {
     transform: rotateY(180deg);
     font-size: 1.32vh;
+    opacity: 0;
+}
+
+@keyframes textApear {
+    20% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes textDesapear {
+    20% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.flipped .back {
+    animation: textApear 1s;
+    opacity: 1;
 }
 
 button {
     min-width: 8vh;
     min-height: 4vh;
-    max-width: 10%;
-    max-height: 10%;
-    padding: 10px 15px 0px 15px;
+    height: 4.5vh;
+    padding: 1vh 1.5vh 0vh 1.5vh;
     color: #c225a5de;
     background-color: rgb(0 65 75);
     border: 3px double #00d558;
-    border-radius: 15px;
-    font-weight: bold;
+    border-radius: 2vh;
     font-size: 1.5vh;
     font-family: GameFont;
     display: flex;

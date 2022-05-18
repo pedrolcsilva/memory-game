@@ -1,4 +1,4 @@
-let deck1 = "Swapping/Multiprogramaçao";
+let deck1 = "Swapping/Multiprogramacao";
 
 let flipped_cards = [];
 
