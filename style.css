@@ -57,5 +57,5 @@ button:active{
 
 @font-face {
     font-family: GameFont;
-    src: url(../MINECRAFTPE.ttf);
+    src: url(./MINECRAFTPE.ttf);
 }
