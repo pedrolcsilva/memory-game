@@ -1,4 +1,5 @@
 body{
+    height: 100vh;
     margin: 0;
     background-image: url("./background.png");
     background-size: cover;
@@ -8,6 +9,7 @@ body{
     background-position: center;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .menu {
@@ -16,7 +18,6 @@ body{
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 24vh;
     align-items: center;
     justify-content: center;
 }
