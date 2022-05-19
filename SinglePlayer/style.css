@@ -44,7 +44,8 @@ main {
     transform-style: preserve-3d;    	
     position: relative; 
     font-family: GameFont;
-    color: #00d558;
+    color: #000000;
+    font-weight: bolder;
     overflow: hidden;
 }
 
