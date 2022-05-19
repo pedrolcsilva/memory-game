@@ -45,12 +45,17 @@ main {
     color: #ffffff;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
     overflow: auto;
+}
 
+.cards:hover:not(.flipped){
+    color: #750660de;
+    background: #00d558;
 }
 
 .cards:active:not(.flipped){
-    opacity: 0.6;
-    transition: .1s;
+    color: hsla(0, 0%, 100%, 0.6);
+    background: hsla(145, 100%, 42%, 0.6);
+    transition: .0s;
 }
 
 .cards.flipped {

@@ -131,28 +131,6 @@ main {
     opacity: .6;
 }
 
-@keyframes textApear {
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-@keyframes textDesapear {
-    20% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.flipped .back {
-    animation: textApear 1s;
-    opacity: 1;
-}
 
 button {
     
