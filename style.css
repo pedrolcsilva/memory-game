@@ -5,7 +5,7 @@ body{
     background-size: cover;
     object-fit: contain;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-attachment: scroll;
     background-position: center;
     display: flex;
     justify-content: center;
@@ -13,13 +13,12 @@ body{
 }
 
 .menu {
-    height: 50vh;
-    width: 50vh;
+    position: absolute;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 11vh;
 }
 
 .menu h1{
@@ -33,7 +32,12 @@ body{
     font-family: GameFont;
 }
 
-.menu button {
+.button_container {
+    display: flex;
+    width: 37vh;
+    justify-content: space-between;
+}
+.button_container button {
     width: 16vh;
     height: fit-content;
     border-bottom: 0.5vh double #130037;
@@ -59,5 +63,5 @@ button:active{
 
 @font-face {
     font-family: GameFont;
-    src: url(./MINECRAFTPE.ttf);
+    src: url(./FARRAY.otf);
 }

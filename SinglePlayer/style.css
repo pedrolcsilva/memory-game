@@ -49,8 +49,7 @@ main {
 }
 
 .cards:active:not(.flipped){
-    color: #750660de;
-    background: hsla(0, 0%, 100%, 0.6);
+    opacity: 0.6;
     transition: .1s;
 }
 
@@ -84,12 +83,13 @@ main {
 
 .front {
     z-index: 1;  
-    font-size: 4.5vh;
+    font-size: 3.8vh;
+    color: white;
 }    
 
 .back {
     transform: rotateY(180deg);
-    font-size: 1.8vh;
+    font-size: 1.5vh;
     text-size-adjust: 80%;
     -ms-text-size-adjust: 80%;
     -moz-text-size-adjust: 80%;
@@ -117,8 +117,7 @@ main {
 button {
     min-width: 8vh;
     min-height: 4vh;
-    height: 4.5vh;
-    padding: 1vh 1.5vh 0vh 1.5vh;
+    padding: 0;
     color: #c225a5de;
     background-color: rgb(0 65 75);
     border: 3px double #00d558;
@@ -128,6 +127,7 @@ button {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: center;
 }
 
 button:hover {
@@ -143,5 +143,5 @@ button:active {
 
 @font-face {
     font-family: GameFont;
-    src: url(../IntroCapsCd-Trial-BkInl.ttf);
+    src: url(../FARRAY.otf);
 }
