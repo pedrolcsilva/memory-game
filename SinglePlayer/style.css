@@ -32,7 +32,7 @@ main {
     min-height: 26vh;
     width: 170px;
     height: 260px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+    box-shadow: 1px 1px 5px black;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,9 +42,7 @@ main {
     transform-style: preserve-3d;    	
     position: relative; 
     font-family: GameFont;
-    color: #ffffff;
-    text-shadow: 1px 1px 1px rgb(0, 0, 0);
-    overflow: auto;
+    overflow: hidden;
 }
 
 .cards:hover:not(.flipped){
@@ -95,10 +93,10 @@ main {
 .back {
     transform: rotateY(180deg);
     font-size: 1.5vh;
-    text-size-adjust: 75%;
-    -ms-text-size-adjust: 75%;
-    -moz-text-size-adjust: 75%;
-    -webkit-text-size-adjust: 75%;
+    text-size-adjust: 70%;
+    -ms-text-size-adjust: 70%;
+    -moz-text-size-adjust: 70%;
+    -webkit-text-size-adjust: 70%;
     color: black;
 }
 
