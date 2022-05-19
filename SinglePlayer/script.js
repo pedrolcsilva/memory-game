@@ -1,8 +1,11 @@
 let deck1 = "Swapping/Multiprogramacao";
-
+let deck2 = "Tecnica que melhora o problema de insuficiencia de memoria, transportando processos da memoria principal para a memoria secundaria/CPU alterna entre processos para que o usuario possa utilizar varios programas paralelamente";
+let deck_img = [
+    "https://icon-library.com/images/swap-icon/swap-icon-0.jpg",
+    "https://icon-library.com/images/parallel-icon/parallel-icon-14.jpg"
+]
 let flipped_cards = [];
 
-let deck2 = "Tecnica que melhora o problema de insuficiencia de memoria, transportando processos da memoria principal para a memoria secundaria/CPU alterna entre processos para que o usuario possa utilizar varios programas paralelamente";
 
 function RandomCard(min, max){
     return Math.round(Math.random() * max + min);
@@ -18,11 +21,14 @@ function CreateCards(){
                 document.getElementById("cards_tab").innerHTML+= `
                 <div class="cards" value="${card_picked}">
                     <div class="front">  			
-                        Carta 		
-                        </div>  		
-                        <div class="back">  			
-                        ${deck2[card_picked]}
-                        </div>  
+                        Carta	
+                    </div>  		
+                    <div class="imgbg">
+                        <img src="${deck_img[card_picked]}"></img>
+                    </div> 
+                    <div class="back">    			
+                    ${deck2[card_picked]}
+                    </div>  
                 </div>
                 `
                 deck2[card_picked] = "";
@@ -34,11 +40,14 @@ function CreateCards(){
                 document.getElementById("cards_tab").innerHTML+= `
                 <div class="cards" value="${card_picked}">
                     <div class="front">  			
-                        Carta 		
-                        </div>  		
-                        <div class="back">  			
-                        ${deck1[card_picked]}
-                        </div>  
+                        Carta
+                    </div>  		
+                    <div class="imgbg">
+                        <img src="${deck_img[card_picked]}"></img>
+                    </div>
+                    <div class="back">   			
+                    ${deck1[card_picked]}
+                    </div>  
                 </div>
                 `
                 deck1[card_picked] = "";

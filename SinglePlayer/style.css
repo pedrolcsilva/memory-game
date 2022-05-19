@@ -7,8 +7,6 @@ header{
 }
 
 body {
-    width: 100vw;
-    height: 100vh;
     margin: 0;
     padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -34,7 +32,7 @@ main {
     min-height: 26vh;
     width: 170px;
     height: 260px;
-    box-shadow: 1px 1px 5px black;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -44,27 +42,22 @@ main {
     transform-style: preserve-3d;    	
     position: relative; 
     font-family: GameFont;
-    color: #000000;
-    font-weight: bolder;
-    overflow: hidden;
-}
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    overflow: auto;
 
-.cards:hover:not(.flipped){
-    color: #750660de;
-    background: #00d558;
-    transition: .1s;
 }
 
 .cards:active:not(.flipped){
-    color: hsla(311, 90%, 24%, 0.6);
-    background: hsla(145, 100%, 42%, 0.6);
+    color: #750660de;
+    background: hsla(0, 0%, 100%, 0.6);
     transition: .1s;
 }
 
 .cards.flipped {
     transform: rotateY(180deg) !important;
-    overflow: visible;
-    transition: 0.6s !important ;  	
+    transition: 0.6s !important ;
+    overflow: visible; 	
 }
 
 .cards.flipped .js-tilt-glare-inner{
@@ -81,7 +74,7 @@ main {
     
 }
 
-.front, .back {  	    	
+.front, .back, .imgbg {  	    	
     position: absolute;  	
     backface-visibility: hidden;
     display: flex;
@@ -91,36 +84,34 @@ main {
 
 .front {
     z-index: 1;  
-    font-size: 3vh;
+    font-size: 4.5vh;
 }    
 
 .back {
     transform: rotateY(180deg);
-    font-size: 1.32vh;
-    opacity: 0;
+    font-size: 1.8vh;
+    text-size-adjust: 80%;
+    -ms-text-size-adjust: 80%;
+    -moz-text-size-adjust: 80%;
+    -webkit-text-size-adjust: 80%;
+    color: black;
 }
 
-@keyframes textApear {
-    20% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+.imgbg {
+    transform: rotateY(180deg);
+    height: 100%;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    border-radius: 5%;
+    background-color: rgb(255, 255, 255)
 }
 
-@keyframes textDesapear {
-    20% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-.flipped .back {
-    animation: textApear 1s;
-    opacity: 1;
+.imgbg img {
+    width: 14vh;
+    height: 14vh;
+    opacity: .6;
 }
 
 button {
@@ -152,5 +143,5 @@ button:active {
 
 @font-face {
     font-family: GameFont;
-    src: url(../MINECRAFTPE.ttf);
+    src: url(../IntroCapsCd-Trial-BkInl.ttf);
 }
