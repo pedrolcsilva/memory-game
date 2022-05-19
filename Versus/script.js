@@ -2,7 +2,7 @@ let deck1 = "Swapping/Multiprogramacao";
 let deck2 = "Tecnica que melhora o problema de insuficiencia de memoria, transportando processos da memoria principal para a memoria secundaria/CPU alterna entre processos para que o usuario possa utilizar varios programas paralelamente";
 let deck_img = [
     "https://icon-library.com/images/swap-icon/swap-icon-0.jpg",
-    "https://icon-library.com/images/parallel-icon/parallel-icon-14.jpg",
+    "https://cdn-icons-png.flaticon.com/512/3580/3580238.png",
 ]
 let flipped_cards = [];
 
