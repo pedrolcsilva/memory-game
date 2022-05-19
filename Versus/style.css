@@ -54,7 +54,6 @@ main {
     transform-style: preserve-3d;    	
     position: relative; 
     font-family: GameFont;
-    color: #00d558;
     overflow: hidden;
 }
 
