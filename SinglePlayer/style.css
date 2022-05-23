@@ -158,7 +158,6 @@ button:active {
     left: 0;
     font-family: GameFont;
     background-color: #00000073;
-    backdrop-filter: blur(5px);
     z-index: 99999;
     opacity: 0;
     pointer-events: none;
@@ -171,6 +170,7 @@ button:active {
     opacity: 1;
     pointer-events: auto;
     transition: .3s;
+    backdrop-filter: blur(5px);
 }
 
 .modal > div {
