@@ -170,7 +170,6 @@ button:active {
     opacity: 1;
     pointer-events: auto;
     transition: .3s;
-    backdrop-filter: blur(5px);
 }
 
 .modal > div {
