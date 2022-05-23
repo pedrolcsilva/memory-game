@@ -1,31 +1,44 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
-    <body>
-        <header>
-            <button id="go_back">Voltar</button>
-        </header>
 
-        <main id="cards_tab">
-        </main>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+</head>
 
-        <script src="script.js"></script>
-        <script src="vanilla-tilt.js"></script>
-        <script>
-            VanillaTilt.init(document.querySelectorAll(".cards"), {
-                max: 10,
-                speed: 400,
-                transition: true,
-                glare: true,
-                "max-glare": .4,
-                "mouse-event-element": null,
-                "glare-prerender": false
-            });
-            
-        </script>
-    </body>
+<body>
+    <header>
+        <button id="go_back">Voltar</button>
+    </header>
+
+    <main id="cards_tab">
+    </main>
+
+    <div class="modal" id="congrats">
+        <div>
+            <h3>Parabens!!</h3>
+            <div>
+                <button id="modal_go_back">Menu</button>
+                <button id="play_again">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script>
+        VanillaTilt.init(document.querySelectorAll(".cards"), {
+            max: 10,
+            speed: 400,
+            transition: true,
+            glare: true,
+            "max-glare": .4,
+            "mouse-event-element": null,
+            "glare-prerender": false
+        });
+
+    </script>
+</body>
+
 </html>

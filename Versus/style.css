@@ -1,5 +1,4 @@
-
-header{
+header {
     display: flex;
     justify-content: space-between;
     font-family: GameFont;
@@ -7,20 +6,37 @@ header{
     color: #67db4a;
 }
 
-h3, h4{
-    margin: 10px auto;
+header div {
+    width: 40vw;
+    padding-left: 0.3vw;
+}
+
+h3,
+h4 {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 header div div {
+    padding: 0;
     display: flex;
+    column-gap: 10px;
+    width: fit-content;
 }
-header div:last-child div:last-child h4:last-child {
+
+header div:last-of-type h3, header div:last-of-type div h4:last-of-type{
+    transform: scale(-1, 1);
+}
+
+header > div:last-of-type {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
     transform: scale(-1, 1);
 }
 
 body {
     margin: 0;
-    padding: 10px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-image: url("https://cdn.wallpapersafari.com/38/13/sQtEFD.png");
     background-size: cover;
@@ -36,7 +52,7 @@ main {
     row-gap: 30px;
     column-gap: 20px;
     justify-content: center;
-    margin-top: 10vh;
+    margin-top: 6vh;
 }
 
 .cards {
@@ -50,20 +66,20 @@ main {
     align-items: center;
     background: #750660de;
     border-radius: 5%;
-    transition: 0.6s;  	
-    transform-style: preserve-3d;    	
-    position: relative; 
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
     font-family: GameFont;
     overflow: hidden;
 }
 
-.cards:hover:not(.flipped){
+.cards:hover:not(.flipped) {
     color: #750660de;
     background: #00d558;
     transition: .1s;
 }
 
-.cards:active:not(.flipped){
+.cards:active:not(.flipped) {
     color: hsla(0, 0%, 100%, 0.6);
     background: hsla(145, 100%, 42%, 0.6);
     transition: .1s;
@@ -72,25 +88,27 @@ main {
 .cards.flipped {
     transform: rotateY(180deg) !important;
     overflow: visible;
-    transition: 0.6s !important ;  	
+    transition: 0.6s !important;
 }
 
-.cards.flipped .js-tilt-glare-inner{
+.cards.flipped .js-tilt-glare-inner {
     background-image: none !important;
     transform: none !important;
     transition: 1s !important;
 
 }
 
-.cards.flipped .js-tilt-glare{
+.cards.flipped .js-tilt-glare {
     background-image: none !important;
     transform: none !important;
     transition: 1s !important;
-    
+
 }
 
-.front, .back, .imgbg {  	    	
-    position: absolute;  	
+.front,
+.back,
+.imgbg {
+    position: absolute;
     backface-visibility: hidden;
     display: flex;
     justify-content: center;
@@ -98,10 +116,10 @@ main {
 }
 
 .front {
-    z-index: 1;  
+    z-index: 1;
     font-size: 3.8vh;
     color: white;
-}    
+}
 
 .back {
     transform: rotateY(180deg);
@@ -132,7 +150,7 @@ main {
 
 
 button {
-    
+    margin-top: 1vh;
     min-width: 8vh;
     min-height: 4vh;
     height: 4vh;
@@ -158,6 +176,73 @@ button:hover {
 button:active {
     opacity: .8;
     transition: .2s;
+}
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-family: GameFont;
+    background-color: #00000073;
+    filter: blur(.6);
+    z-index: 99999;
+    opacity: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.active {
+    opacity: 1;
+    pointer-events: auto;
+    transition: .3s;
+}
+
+.modal>div {
+    width: 90vw;
+    height: 70vh;
+    max-height: 50vw;
+    border-radius: .2vh;
+    background-color: #450982;
+    border: 3px solid rgba(112, 112, 112, 0.383);
+    color: #c225a5de;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.modal>div h3 {
+    margin: 0;
+    font-size: 7vw;
+    text-align: center;
+    text-shadow: 1px 1px 3px black;
+}
+
+.modal>div>div {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+
+.modal>div button {
+    border-radius: 120px;
+    font-size: 5vw;
+    background-color: transparent;
+    border: none;
+}
+
+.modal>div button:hover {
+    text-shadow: 0px 0px 25px rgb(23, 23, 23);
+}
+
+.turn {
+    background: linear-gradient(95deg, rgba(198, 0, 253, 0.458) 20%, rgba(198, 0, 253, 0.1) 80%, transparent 100%);
+    padding-bottom: 2vh;
 }
 
 @font-face {
