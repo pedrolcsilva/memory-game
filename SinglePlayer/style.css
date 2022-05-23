@@ -158,7 +158,7 @@ button:active {
     left: 0;
     font-family: GameFont;
     background-color: #00000073;
-    filter: blur(.6);
+    backdrop-filter: blur(5px);
     z-index: 99999;
     opacity: 0;
     pointer-events: none;
