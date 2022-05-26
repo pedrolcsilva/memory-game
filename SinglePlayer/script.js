@@ -10,8 +10,7 @@ let deck_img = [
     "../icons/zswap.png",
     "https://cdn4.iconfinder.com/data/icons/computers-3/32/61-01-512.png",
     "https://cdn-icons-png.flaticon.com/512/689/689369.png",
-    "https://cdn.icon-icons.com/icons2/2248/PNG/512/harddisk_icon_137515.png"
-
+    "../icons/discorigido.png",
 ]
 let flipped_cards = [];
 let cards
