@@ -49,7 +49,7 @@ body {
 main {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 30px;
+    row-gap: 20px;
     column-gap: 20px;
     justify-content: center;
     margin-top: 6vh;
@@ -123,12 +123,20 @@ main {
 
 .back {
     transform: rotateY(180deg);
-    font-size: 1.5vh;
+    font-size: 1.7vh;
     text-size-adjust: 70%;
     -ms-text-size-adjust: 70%;
     -moz-text-size-adjust: 70%;
     -webkit-text-size-adjust: 70%;
-    color: black;
+    color: rgb(0, 0, 0);
+}
+
+.back, .imgbg {
+    opacity: 0;
+}
+
+.cards.flipped .back, .cards.flipped .imgbg {
+    opacity: 1;
 }
 
 .imgbg {
@@ -139,13 +147,14 @@ main {
     align-self: center;
     align-items: center;
     border-radius: 5%;
-    background-color: rgb(255, 255, 255)
+    background-color: rgb(255, 255, 255);
+    pointer-events: none;
 }
 
 .imgbg img {
     width: 14vh;
     height: 14vh;
-    opacity: .6;
+    opacity: .4;
 }
 
 

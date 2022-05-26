@@ -1,8 +1,17 @@
-let deck_pri = "Swapping/Multiprogramacao";
-let deck_sec = "Tecnica que melhora o problema de insuficiencia de memoria, transportando processos da memoria principal para a memoria secundaria/CPU alterna entre processos para que o usuario possa utilizar varios programas paralelamente";
+let deck_pri = "Swapping/Multi programacao/Throughput/ReadyBoost/Swappiness/Mono programacao/ZSWAP/Chache/Memoria ram/Disco Rigido";
+let deck_sec = "Tecnica que melhora o problema de insuficiencia de memoria, transportando processos da memoria principal para a memoria secundaria/CPU alterna entre processos para que o usuario possa utilizar varios programas paralelamente/Metrica da capacidade de transferencia de dados/Recurso que permite que uma unidade de armazenamento externa seja usada para como substituta para memoria ram/Parametro do linux que nos permite configurar o swap/Apenas um programa pode ser executado pelo processador/Recurso do linux que compacta os dados e armazena na memoria ram/Armazenamento de dados de alta velocidade que permite que programas sejam executados mais rapidamente/Componente responsavel pelo armazenamento de informacoes temporarias para execucao de aplicativos e do so/Componente de baixo custo que realiza a gravacao dados em um disco magnetico, sendo uma memoria secundaria";
 let deck_img = [
     "https://icon-library.com/images/swap-icon/swap-icon-0.jpg",
     "https://cdn-icons-png.flaticon.com/512/3580/3580238.png",
+    "https://cdn2.iconfinder.com/data/icons/business-and-finance-41/100/statistics_performance_productivity_growth_development_increase-2-512.png",
+    "https://i.pinimg.com/originals/b3/2d/65/b32d659e36e50e459e00ed3957a10551.png",
+    "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Linux_Logo_in_Linux_Libertine_Font.svg/872px-Linux_Logo_in_Linux_Libertine_Font.svg.png",
+    "https://static.thenounproject.com/png/2583209-200.png",
+    "../icons/zswap.png",
+    "https://cdn4.iconfinder.com/data/icons/computers-3/32/61-01-512.png",
+    "https://cdn-icons-png.flaticon.com/512/689/689369.png",
+    "https://cdn.icon-icons.com/icons2/2248/PNG/512/harddisk_icon_137515.png"
+
 ]
 let flipped_cards = [];
 let cards
